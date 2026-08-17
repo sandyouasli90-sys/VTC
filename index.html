@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBL Riviera | Chauffeuse privée</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fbf3ed;color:#343436;font-family:Georgia,"Times New Roman",serif}
+body{min-height:100vh}
+.hero{
+  height:790px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  text-align:center;
+  color:#f6e3b5;
+  background:
+    linear-gradient(180deg,rgba(25,18,16,.20),rgba(25,18,16,.48)),
+    linear-gradient(180deg,#7b6a6a 0%,#d78d54 48%,#4e4642 100%);
+}
+.hero:before{
+  content:"";
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 18% 68%,rgba(255,210,110,.95) 0 5%,rgba(255,170,70,.22) 12%,transparent 27%),
+    linear-gradient(175deg,transparent 58%,rgba(38,42,44,.65) 59%,rgba(55,51,49,.9) 73%,rgba(29,28,27,.98) 100%);
+}
+.hero>*{position:relative;z-index:1}
+.brand{margin-top:70px;width:100%;font-size:76px;letter-spacing:12px;line-height:1}
+.riviera{margin-top:20px;font-size:44px;letter-spacing:12px}
+.service{margin-top:36px;font-family:Arial,sans-serif;font-size:16px;letter-spacing:5px}
+.place{margin-top:24px;font-family:Arial,sans-serif;font-size:14px;letter-spacing:3px}
+.orn{margin:15px 0;color:#e9c879;font-size:20px}
+.nav{
+  position:absolute;bottom:25px;left:4%;right:4%;
+  display:flex;gap:8px;align-items:stretch
+}
+.nav a{
+  flex:1;text-decoration:none;color:#f7e7c4;
+  border:1px solid #c8a15c;border-radius:5px;
+  padding:17px 8px;font-family:Arial,sans-serif;
+  font-size:13px;letter-spacing:1px;background:rgba(30,20,17,.22)
+}
+.content{padding:48px 8% 70px;text-align:center}
+.kicker{font-family:Arial,sans-serif;color:#b99764;letter-spacing:2px;font-size:13px}
+h1{font-size:34px;font-weight:400;margin:20px 0 12px}
+.divider{color:#c8a15c;font-size:22px}
+.intro{max-width:650px;margin:20px auto 35px;font-size:17px;line-height:1.7}
+.features{display:flex;gap:20px;justify-content:center;margin:0 auto 38px;max-width:800px}
+.feature{flex:1;font-family:Arial,sans-serif;font-size:13px;line-height:1.5}
+.feature strong{display:block;margin-top:8px;font-size:13px}
+.bottom{display:flex;gap:14px;max-width:900px;margin:auto;text-align:left}
+.photo{
+  flex:1;min-height:220px;border-radius:6px;
+  background:
+    linear-gradient(180deg,rgba(30,30,30,.05),rgba(20,20,20,.25)),
+    linear-gradient(135deg,#8b7568,#d99b61 52%,#35434a);
+}
+.card{flex:1;border:1px solid #d5b77e;border-radius:6px;padding:28px;font-family:Arial,sans-serif}
+.card h2{font-family:Georgia,serif;font-weight:400;text-align:center;font-size:20px}
+.card p{margin:12px 0}
+@media(max-width:600px){
+  .hero{height:790px}
+  .brand{font-size:64px;letter-spacing:9px}
+  .riviera{font-size:36px;letter-spacing:9px}
+  .service{font-size:13px;letter-spacing:4px}
+  .place{font-size:11px}
+  .features{gap:8px}
+  .bottom{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="brand">SBL</div>
+  <div class="riviera">RIVIERA</div>
+  <div class="orn">✦</div>
+  <div class="service">CHAUFFEUSE PRIVÉE</div>
+  <div class="place">NICE · CANNES · MONACO · CÔTE D’AZUR</div>
+  <nav class="nav">
+    <a href="#tarifs">⌑ &nbsp; TARIFS</a>
+    <a href="#panorama">⌖ &nbsp; PANORAMA TOUR</a>
+    <a href="#reserver">▣ &nbsp; RÉSERVER</a>
+  </nav>
+</section>
+
+<section class="content">
+  <div class="kicker">VOTRE CHAUFFEUSE PRIVÉE SUR LA CÔTE D’AZUR</div>
+  <h1>L’excellence à chaque trajet</h1>
+  <div class="divider">— ◇ —</div>
+  <p class="intro">Ponctualité, discrétion et confort haut de gamme.<br>Je vous accompagne pour tous vos déplacements à Nice, Cannes, Monaco et partout sur la Côte d’Azur.</p>
+
+  <div class="features">
+    <div class="feature">◷<strong>DISPONIBLE<br>24H/24 · 7J/7</strong></div>
+    <div class="feature">♢<strong>CONFORT<br>&amp; SÉCURITÉ</strong></div>
+    <div class="feature">♙<strong>CHAUFFEUSE<br>PROFESSIONNELLE</strong></div>
+  </div>
+
+  <div class="bottom">
+    <div class="photo" aria-label="Visuel Côte d’Azur au coucher du soleil"></div>
+    <div class="card" id="tarifs">
+      <h2>SERVICE PRIVÉ HAUT DE GAMME</h2>
+      <p>✓ Transferts aéroports &amp; gares</p>
+      <p>✓ Mise à disposition</p>
+      <p id="panorama">✓ Visites &amp; circuits touristiques</p>
+      <p id="reserver">✓ Événements &amp; occasions spéciales</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
